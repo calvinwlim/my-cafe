@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>my cafe</title>
+<title>rainy day cafe</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +17,55 @@
 
 <body>
     <h1>
-        my cafe
+        the rainy cafe.
     </h1>
     <div class="spotify">
         <iframe src="https://open.spotify.com/embed/playlist/1YahsrlR5R1BEfe4D2dYq3" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
+    <!-- <div class = "react-reveal" style = "width: 270px; opacity: 1;"> 
+    <div class = "rainSound" id = "fullRoomPlayer" style = "animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 4400ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-30074356308696-1;">
+    <label> Raining on Window </label>
+    <div class = "rainSound-row">
+        <div class = "audio-player" style = "font-family: sans-serif; font-weight: 100; color: white; font-size: small; width: 260px; display:flex; flex-direction: column;">
+        <audio src = "\media\Rain on a Window Sound - 60 Minutes 'Sleep Sounds'.mp3">
+        </audio>
+        <div class = "tier-top" style = "display: flex; flex-direction: row; justify-content: left; width: 100%; margin: 0.3rem;">
+        <div style = "display: flex; align-items: center; justify-content: left; width: fit-content;">
+        <div id = "play">
+            <img class = "play.png" id = "play-icon" src ="src\media\play.png" style= "height: 1rem;">
+        </div>
+        </div>
+        <div style = "display: flex; align-items: center; justify-content: left; width: 100%;">
+        <div class =" audio-player-volume" style = "width: 100%;"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div> -->
+    <div class = "content">
+        <div class = "right-col">
+            <p> rain on window</p>
+            <img src = "media/play.png" id = "icon" width="5px" height="50px">
+        </div>
+    </div>
+    <audio id = "rainSound">
+        <source src = "media/Rain on a Window Sound - 60 Minutes 'Sleep Sounds'.mp3" type = "audio/mp3">
+    </audio>
+
+    <script>
+        var rainSound = document.getElementById("rainSound");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(rainSound.paused){
+                rainSound.play();
+                icon.src = "media/pause.png";
+            } else{
+                rainSound.pause();
+                icon.src = "media/play.png";
+            }
+        }
+    </script>
+    
 </body>
