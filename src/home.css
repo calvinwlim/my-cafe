@@ -1,0 +1,25 @@
+body {
+    background-color: #1b1a33;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 10;
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/787489130926729692/0E33DA328A22EACD3DC8B88B81E582228941E969/?imw=1024&imh=541&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Lexend', sans-serif;
+    color: #62828b;
+    margin-left: 25px;
+    padding-top: 50px;
+}
+
+.spotify {
+    width: 350px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 450px;
+}
